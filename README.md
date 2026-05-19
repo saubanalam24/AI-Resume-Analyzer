@@ -12,3 +12,7 @@ An AI-powered Resume Analyzer built using Flask, NLP, PDF processing, and data v
 - Match Score Calculation
 - Matched & Missing Skills Detection
 - Pie Chart Visualization
+
+## Live Demo
+
+https://ai-resume-analyzer-tcwu.onrender.com
