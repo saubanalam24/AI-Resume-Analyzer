@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Report</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        AI Resume Analyzer
+    </div>
+
+    <div class="report-container">
+
+        <h1>Resume Analysis</h1>
+
+        <div class="score-circle {{ color_class }}">
+            {{ score }}%
+        </div>
+
+        <h2>{{ message }}</h2>
+
+        <!-- Chart -->
+        <div class="chart-box">
+            <img src="{{ url_for('static', filename='charts/chart.png') }}">
+        </div>
+
+        <!-- Matched Skills -->
+        <div class="section">
+            <h3>Matched Skills</h3>
+
+            <div class="skills">
+                {% for skill in matched_skills %}
+                    <span class="matched">{{ skill }}</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Missing Skills -->
+        <div class="section">
+            <h3>Missing Skills</h3>
+
+            <div class="skills">
+                {% for skill in missing_skills %}
+                    <span class="missing">{{ skill }}</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="feedback-box">
+            <h3>Suggestions</h3>
+
+            <ul>
+                {% for suggestion in suggestions %}
+                    <li>{{ suggestion }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Download PDF -->
+        <a href="/download">
+            <button class="download-btn">
+                Download PDF Report
+            </button>
+        </a>
+
+    </div>
+
+</body>
+</html>

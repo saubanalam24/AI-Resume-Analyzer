@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+    color:#111827;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    padding:22px;
+    background:#111827;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    letter-spacing:1px;
+}
+
+/* HOME PAGE */
+
+.container{
+    max-width:800px;
+    margin:50px auto;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.container h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+label{
+    font-size:20px;
+    font-weight:bold;
+}
+
+input[type="file"]{
+    padding:10px;
+}
+
+textarea{
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    resize:none;
+    font-size:16px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* REPORT PAGE */
+
+.report-container{
+    max-width:1100px;
+    margin:50px auto;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.report-container h1{
+    text-align:center;
+    font-size:70px;
+    margin-bottom:40px;
+}
+
+/* SCORE CIRCLE */
+
+.score-circle{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 30px;
+    font-size:80px;
+    font-weight:bold;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.red{
+    background:#ef4444;
+}
+
+.yellow{
+    background:#eab308;
+}
+
+.green{
+    background:#22c55e;
+}
+
+.report-container h2{
+    text-align:center;
+    font-size:60px;
+    margin-bottom:50px;
+}
+
+/* CHART */
+
+.chart-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.chart-box img{
+    width:280px;
+    border-radius:20px;
+    background:white;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* SECTIONS */
+
+.section{
+    margin-bottom:50px;
+}
+
+.section h3{
+    font-size:50px;
+    margin-bottom:25px;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skills span{
+    padding:14px 28px;
+    border-radius:40px;
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    transform:scale(1.08);
+}
+
+.matched{
+    background:#16a34a;
+}
+
+.missing{
+    background:#dc2626;
+}
+
+/* FEEDBACK */
+
+.feedback-box{
+    background:#f9fafb;
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:40px;
+    border-left:8px solid #2563eb;
+}
+
+.feedback-box h3{
+    font-size:45px;
+    margin-bottom:25px;
+}
+
+.feedback-box ul{
+    padding-left:30px;
+}
+
+.feedback-box li{
+    margin-bottom:18px;
+    font-size:28px;
+    line-height:1.6;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+    width:100%;
+    padding:18px;
+    font-size:24px;
+    background:#2563eb;
+}
+
+.download-btn:hover{
+    background:#1d4ed8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .report-container h1{
+        font-size:45px;
+    }
+
+    .report-container h2{
+        font-size:38px;
+    }
+
+    .section h3{
+        font-size:34px;
+    }
+
+    .skills span{
+        font-size:20px;
+    }
+
+    .feedback-box li{
+        font-size:20px;
+    }
+
+    .score-circle{
+        width:220px;
+        height:220px;
+        font-size:60px;
+    }
+}
